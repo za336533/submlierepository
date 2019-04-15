@@ -63,3 +63,7 @@ sublime 中使用插件命令
 1. git: Add All 将文件提交到暂存区
 2. git: Commit 提交文件并添加注释
 3. git: Push 上传至远程仓库
+
+> 注意：在添加到远程库的时候，可能要到git本地仓库进行一次git add 和git commit
+操作，因为在git版本苦衷，sublime的提交没有实现。然后再提交到远程库：git remote add origin....
+然后还需要创建分支：git push -u origin master 创建提交分支
